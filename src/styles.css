@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.parent{
+    border: 2px solid gray;
+    width: 800;
+    margin: 0 auto;
+}
+.child{
+    border: 2px solid rgb(82, 57, 57);
+    width: 400;
+    margin: 0 auto;
+    margin: 50px;
+}

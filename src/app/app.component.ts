@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'childtoparent';
+  list : any = [];
+  constructor(){
+  }
+  mydata(e:any){
+    this.list = e;
+    console.log(321,this.list)
+  }
 }
