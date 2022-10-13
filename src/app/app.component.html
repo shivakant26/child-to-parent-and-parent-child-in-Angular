@@ -1,8 +1,22 @@
 <div class="parent">
   <h2>i am your Parent</h2>
-  <ul *ngFor="let d of list">
+  <table>
+    <tr>
+      <th>Sr No.</th>
+      <th>Name</th>
+      <th>Estaiblish Year</th>
+      <th>Location</th>
+    </tr>
+    <tr *ngFor="let d of list; index as i">
+      <td>{{i}}</td>
+      <td>{{d.name}}</td>
+      <td>{{d.establishyear}}</td>
+      <td>{{d.location}}</td>
+    </tr>
+  </table>
+  <!-- <ul *ngFor="let d of list">
     <li>{{d.name}} | {{d.establishyear}} | {{d.location}}</li>
-  </ul>
+  </ul> -->
   <div class="child">
     <app-child
   name="Yuvasoft"
